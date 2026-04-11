@@ -316,6 +316,11 @@ export default function StereoTiledPanorama() {
             hotspotParentObjectRef.current.add(hotspotRing);
         });
 
+        if (infoParentRef.current) {
+            sceneRef.current.remove(infoParentRef.current);
+            infoParentRef.current = null;
+        }
+
         // Create info hotspots
         pano_data.info_hotspots.forEach((hotspot) => {
             // const planeGeo = new THREE.PlaneGeometry(0.2, 0.2);
@@ -342,11 +347,6 @@ export default function StereoTiledPanorama() {
             // infospotPlane.userData.type = hotspot.type;
 
             // console.log(`Created hotspot for target panorama ${hotspot.target} at position`, infospotPlane.position);
-
-            if (infoParentRef.current) {
-                sceneRef.current.remove(infoParentRef.current);
-                infoParentRef.current = null;
-            }
 
             infoParentRef.current = new THREE.Object3D();
             sceneRef.current.add(infoParentRef.current);
@@ -710,7 +710,7 @@ export default function StereoTiledPanorama() {
             state: "hovered",
             attributes: {
                 offset: 0.035,
-                backgroundColor: new THREE.Color(0x999999),
+                // backgroundColor: new THREE.Color(0x999999),
                 backgroundOpacity: 1,
                 fontColor: new THREE.Color(0xffffff),
             },
@@ -720,15 +720,15 @@ export default function StereoTiledPanorama() {
             state: "idle",
             attributes: {
                 offset: 0.035,
-                backgroundColor: new THREE.Color(0x666666),
-                backgroundOpacity: 0.3,
+                // backgroundColor: new THREE.Color(0x666666),
+                backgroundOpacity: 0.75,
                 fontColor: new THREE.Color(0xffffff),
             },
         };
 
         const selectedAttributes = {
             offset: 0.02,
-            backgroundColor: new THREE.Color(0x777777),
+            // backgroundColor: new THREE.Color(0x777777),
             fontColor: new THREE.Color(0x222222),
         };
 
@@ -940,7 +940,8 @@ export default function StereoTiledPanorama() {
             intersect = raycast();
 
             // Position the little white dot at the end of the controller pointing ray
-            if (intersect) vrControlRef.current.setPointerAt(intersect);
+            if (intersect) { vrControlRef.current.setPointerAt(intersect); } else { vrControlRef.current.hidePointer(); }
+
 
             if (intersect) {
                 // console.log("Intersection found with object:", intersect);

@@ -205,7 +205,7 @@ function makeTextPanel(parent) {
     state: "hovered",
     attributes: {
       offset: 0.035,
-      backgroundColor: new THREE.Color(0x999999),
+      // backgroundColor: new THREE.Color(0x999999),
       backgroundOpacity: 1,
       fontColor: new THREE.Color(0xffffff),
     },
@@ -216,15 +216,16 @@ function makeTextPanel(parent) {
     attributes: {
       offset: 0.035,
       backgroundColor: new THREE.Color(0x666666),
-      backgroundOpacity: 0.3,
+      backgroundOpacity: 0.75,
       fontColor: new THREE.Color(0xffffff),
     },
   };
 
   const selectedAttributes = {
     offset: 0.02,
-    backgroundColor: new THREE.Color(0x777777),
+    // backgroundColor: new THREE.Color(0x777777),
     fontColor: new THREE.Color(0x222222),
+    // backgroundOpacity: 1,
   };
 
   closeButton.setupState({

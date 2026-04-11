@@ -241,6 +241,10 @@ export default function VRControl(renderer, camera, scene) {
   // Position the chosen controller's pointer at the given point in space.
   // Should be called after raycaster.intersectObject() found an intersection point.
 
+  function hidePointer() {
+    pointerRing.visible = false;
+  }
+
   function setPointerAt(hit) {
     const worldPoint = hit.point.clone();
 
@@ -287,6 +291,7 @@ export default function VRControl(renderer, camera, scene) {
     updateRightControllerCurve,
     hideRightControllerCurve,
     showRightControllerCurve,
+    hidePointer,
   };
 }
 
