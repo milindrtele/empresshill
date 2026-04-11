@@ -1,0 +1,64 @@
+# 1. Define the absolute path. 
+# Added quotes in case your path has spaces.
+BASISU_EXE="/D/Downloads/basisu-master/basisu-master/bin/win/x64/basisu.exe"
+
+echo "Starting debug run..."
+
+# 2. Check if the BasisU tool even exists at that path
+if [ ! -f "$BASISU_EXE" ]; then
+    echo "ERROR: basisu.exe not found at $BASISU_EXE"
+    echo "Check your path and drive letter."
+    # Use 'exit' if running as a script file, or just stop here.
+else
+    echo "SUCCESS: basisu.exe located."
+fi
+
+for i in {6..23}; do
+    pano_dir="pano_$i"
+    
+    if [ -d "$pano_dir" ]; then
+        echo "------------------------------------------------"
+        echo "DEBUG: Entering $pano_dir"
+        
+        for quality in high low; do
+            for side in left right; do
+                target_path="$pano_dir/$quality/$side"
+                
+                if [ -d "$target_path" ]; then
+                    echo "  DEBUG: Moving into $target_path"
+                    
+                    # Store current directory to return safely
+                    START_DIR=$(pwd)
+                    
+                    cd "$target_path" || { echo "  ERROR: Could not cd to $target_path"; continue; }
+                    
+                    # Check if there are actually any jpgs
+                    shopt -s nullglob
+                    files=(*.jpg)
+                    if [ ${#files[@]} -eq 0 ]; then
+                        echo "    NOTICE: No .jpg files found in $(pwd)"
+                    else
+                        echo "    Found ${#files[@]} images. Starting conversion..."
+                        for f in "${files[@]}"; do
+                            # The actual command
+                            "$BASISU_EXE" "$f" -ktx2 -mipmap
+                            
+                            # Check if the last command failed
+                            if [ $? -ne 0 ]; then
+                                echo "    ERROR: BasisU failed on $f"
+                            fi
+                        done
+                    fi
+                    
+                    # 3. Return to the starting 'stereo' directory safely
+                    cd "$START_DIR"
+                else
+                    echo "  SKIP: Folder $target_path does not exist."
+                fi
+            done
+        done
+    fi
+done
+
+echo "------------------------------------------------"
+echo "Process Finished."

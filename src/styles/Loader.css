@@ -1,0 +1,77 @@
+.loader-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.loader-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 60px 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    min-width: 300px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.loader-spinner {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 30px;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    border-top: 4px solid #ffd277;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loader-text {
+    color: #ffffff;
+    font-size: 24px;
+    margin: 20px 0 30px 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.progress-bar-container {
+    width: 100%;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #ffd277, #ffc869);
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+.loader-percentage {
+    color: #ffd277;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.loader-subtitle {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    margin: 10px 0 0 0;
+    letter-spacing: 0.5px;
+}

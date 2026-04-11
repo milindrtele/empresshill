@@ -1,0 +1,623 @@
+[
+  {
+    "id": "pano_1",
+    "pos_hotspots": [
+      {
+        "id": "hotspot_1",
+        "type": "position",
+        "position": [-3, -1.595, -0.25],
+        "target": "pano_2",
+        "target_url": "https://example.com/pano_2"
+      }
+    ],
+    "info_hotspots": []
+  },
+  {
+    "id": "pano_2",
+    "pos_hotspots": [
+      {
+        "id": "hotspot_2",
+        "type": "position",
+        "position": [-4, -1.595, 1],
+        "target": "pano_1",
+        "target_url": "https://example.com/pano_3"
+      },
+      {
+        "id": "hotspot_1",
+        "type": "position",
+        "position": [-2.5286, -1.595, 2.2738],
+        "target": "pano_3",
+        "target_url": "https://example.com/pano_1"
+      },
+      {
+        "id": "hotspot_3",
+        "type": "position",
+        "position": [3.1799, -1.595, 3.8663],
+        "target": "pano_14",
+        "target_url": "https://example.com/pano_3"
+      },
+      {
+        "id": "hotspot_4",
+        "type": "position",
+        "position": [2.023, -1.55, 2.1893],
+        "target": "pano_16",
+        "target_url": "https://example.com/pano_3"
+      },
+      {
+        "id": "hotspot_5",
+        "type": "position",
+        "position": [-1.1416, -1.595, -2.0154],
+        "target": "pano_18",
+        "target_url": "https://example.com/pano_3"
+      },
+      {
+        "id": "hotspot_6",
+        "type": "position",
+        "position": [2.3126, -1.55, -1.2562],
+        "target": "pano_6",
+        "target_url": "https://example.com/pano_3"
+      }
+    ],
+    "info_hotspots": [
+      {
+        "id": "infospot_1",
+        "type": "info",
+        "position": [-0.30023, -1.55, -3.7999],
+        "target": "living_room_info"
+      }
+    ]
+  },
+  {
+    "id": "pano_3",
+    "pos_hotspots": [
+      {
+        "id": "hotspot_1",
+        "type": "position",
+        "position": [-2.3031, -1.595, -2.2144],
+        "target": "pano_2",
+        "target_url": "https://example.com/pano_3"
+      },
+      {
+        "id": "hotspot_2",
+        "type": "position",
+        "position": [1.7326, -1.595, -0.94617],
+        "target": "pano_4",
+        "target_url": "https://example.com/pano_3"
+      },
+      {
+        "id": "hotspot_3",
+        "type": "position",
+        "position": [3.4975, -1.595, -1.7599],
+        "target": "pano_5",
+        "target_url": "https://example.com/pano_3"
+      },
+      {
+        "id": "hotspot_4",
+        "type": "position",
+        "position": [-3.201, -1.595, -4.4784],
+        "target": "pano_6",
+        "target_url": "https://example.com/pano_3"
+      }
+    ],
+    "info_hotspots": []
+  },
+  {
+    "id": "pano_4",
+    "pos_hotspots": [
+      {
+        "id": "hotspot_1",
+        "type": "position",
+        "position": [1.6477, -1.595, -0.86917],
+        "target": "pano_3",
+        "target_url": "https://example.com/pano_3"
+      },
+      {
+        "id": "hotspot_2",
+        "type": "position",
+        "position": [-1.6887, -1.595, 0.81907],
+        "target": "pano_5",
+        "target_url": "https://example.com/pano_3"
+      }
+    ],
+    "info_hotspots": [
+      {
+        "id": "infospot_1",
+        "type": "info",
+        "position": [-0.98877, -1.55, -1.8341],
+        "target": "kitchen"
+      }
+    ]
+  },
+  {
+    "id": "pano_5",
+    "pos_hotspots": [
+      {
+        "id": "hotspot_1",
+        "type": "position",
+        "position": [3.3597, -1.595, -1.9007],
+        "target": "pano_3",
+        "target_url": "https://example.com/pano_3"
+      },
+      {
+        "id": "hotspot_2",
+        "type": "position",
+        "position": [1.9462, -1.595, -0.95361],
+        "target": "pano_4",
+        "target_url": "https://example.com/pano_3"
+      }
+    ],
+    "info_hotspots": []
+  },
+  {
+    "id": "pano_6",
+    "pos_hotspots": [
+      {
+        "id": "hotspot_1",
+        "type": "position",
+        "position": [2.7191, -1.595, -1.519],
+        "target": "pano_2",
+        "target_url": "https://example.com/pano_3"
+      },
+      {
+        "id": "hotspot_2",
+        "type": "position",
+        "position": [4.9774, -1.595, -3.4656],
+        "target": "pano_3",
+        "target_url": "https://example.com/pano_3"
+      },
+      {
+        "id": "hotspot_3",
+        "type": "position",
+        "position": [-2.1248, -1.595, 1.3662],
+        "target": "pano_7",
+        "target_url": "https://example.com/pano_3"
+      },
+      {
+        "id": "hotspot_4",
+        "type": "position",
+        "position": [-3.11327, 1.7447, 1.3987],
+        "target": "pano_8",
+        "target_url": "https://example.com/pano_3"
+      }
+    ],
+    "info_hotspots": []
+  },
+  {
+    "id": "pano_7",
+    "pos_hotspots": [
+      {
+        "id": "hotspot_1",
+        "type": "position",
+        "position": [4.4329, -1.595, -2.4924],
+        "target": "pano_2",
+        "target_url": "https://example.com/pano_3"
+      },
+      {
+        "id": "hotspot_2",
+        "type": "position",
+        "position": [2.1167, -1.595, -1.156],
+        "target": "pano_6",
+        "target_url": "https://example.com/pano_3"
+      },
+      {
+        "id": "hotspot_3",
+        "type": "position",
+        "position": [-1.6907, -1.595, 0.78379],
+        "target": "pano_8",
+        "target_url": "https://example.com/pano_3"
+      }
+    ],
+    "info_hotspots": []
+  },
+  {
+    "id": "pano_8",
+    "pos_hotspots": [
+      {
+        "id": "hotspot_1",
+        "type": "position",
+        "position": [3.4265, -1.595, 5.8502],
+        "target": "pano_2",
+        "target_url": "https://example.com/pano_3"
+      },
+      {
+        "id": "hotspot_2",
+        "type": "position",
+        "position": [1.0216, -1.595, 1.6476],
+        "target": "pano_7",
+        "target_url": "https://example.com/pano_3"
+      },
+      {
+        "id": "hotspot_3",
+        "type": "position",
+        "position": [3.6209, -1.595, -2.0043],
+        "target": "pano_9",
+        "target_url": "https://example.com/pano_3"
+      },
+      {
+        "id": "hotspot_4",
+        "type": "position",
+        "position": [5.9694, -1.595, -3.3313],
+        "target": "pano_10",
+        "target_url": "https://example.com/pano_3"
+      }
+    ],
+    "info_hotspots": []
+  },
+  {
+    "id": "pano_9",
+    "pos_hotspots": [
+      {
+        "id": "hotspot_1",
+        "type": "position",
+        "position": [-2.8263, -1.595, 1.7547],
+        "target": "pano_8",
+        "target_url": "https://example.com/pano_3"
+      },
+      {
+        "id": "hotspot_2",
+        "type": "position",
+        "position": [2.5536, -1.595, -1.3836],
+        "target": "pano_10",
+        "target_url": "https://example.com/pano_3"
+      },
+      {
+        "id": "hotspot_3",
+        "type": "position",
+        "position": [0.88838, -1.595, 3.5751],
+        "target": "pano_17",
+        "target_url": "https://example.com/pano_3"
+      }
+    ],
+    "info_hotspots": [
+      {
+        "id": "infospot_1",
+        "type": "info",
+        "position": [-0.50372, -1.55, -0.50372],
+        "target": "balcony"
+      }
+    ]
+  },
+  {
+    "id": "pano_10",
+    "pos_hotspots": [
+      {
+        "id": "hotspot_1",
+        "type": "position",
+        "position": [2.8777, -1.595, 5.838],
+        "target": "pano_8",
+        "target_url": "https://example.com/pano_3"
+      },
+      {
+        "id": "hotspot_2",
+        "type": "position",
+        "position": [1.2134, -1.595, 2.4714],
+        "target": "pano_9",
+        "target_url": "https://example.com/pano_3"
+      },
+      {
+        "id": "hotspot_3",
+        "type": "position",
+        "position": [3.3495, -1.595, -1.9886],
+        "target": "pano_11",
+        "target_url": "https://example.com/pano_3"
+      }
+    ],
+    "info_hotspots": []
+  },
+  {
+    "id": "pano_11",
+    "pos_hotspots": [
+      {
+        "id": "hotspot_1",
+        "type": "position",
+        "position": [-1.6731, -1.595, -2.8279],
+        "target": "pano_10",
+        "target_url": "https://example.com/pano_3"
+      },
+      {
+        "id": "hotspot_2",
+        "type": "position",
+        "position": [2.9486, -1.595, 2.3229],
+        "target": "pano_12",
+        "target_url": "https://example.com/pano_3"
+      }
+    ],
+    "info_hotspots": [
+      {
+        "id": "infospot_1",
+        "type": "info",
+        "position": [0.92896, -1.55, -0.69271],
+        "target": "master_bedroom"
+      }
+    ]
+  },
+  {
+    "id": "pano_12",
+    "pos_hotspots": [
+      {
+        "id": "hotspot_1",
+        "type": "position",
+        "position": [2.7794, -1.595, -3.3037],
+        "target": "pano_11",
+        "target_url": "https://example.com/pano_3"
+      },
+      {
+        "id": "hotspot_2",
+        "type": "position",
+        "position": [-0.68528, -1.595, -1.2024],
+        "target": "pano_13",
+        "target_url": "https://example.com/pano_3"
+      }
+    ],
+    "info_hotspots": []
+  },
+  {
+    "id": "pano_13",
+    "pos_hotspots": [
+      {
+        "id": "hotspot_1",
+        "type": "position",
+        "position": [0.9536, -1.595, 1.3753],
+        "target": "pano_12",
+        "target_url": "https://example.com/pano_3"
+      }
+    ],
+    "info_hotspots": [
+      {
+        "id": "infospot_1",
+        "type": "info",
+        "position": [-0.63989, -1.55, -0.27236],
+        "target": "master_bathroom"
+      }
+    ]
+  },
+  {
+    "id": "pano_14",
+    "pos_hotspots": [
+      {
+        "id": "hotspot_1",
+        "type": "position",
+        "position": [-1.5802, -1.595, -2.6083],
+        "target": "pano_11",
+        "target_url": "https://example.com/pano_3"
+      },
+      {
+        "id": "hotspot_2",
+        "type": "position",
+        "position": [1.47, -1.595, -0.76819],
+        "target": "pano_15",
+        "target_url": "https://example.com/pano_3"
+      },
+      {
+        "id": "hotspot_3",
+        "type": "position",
+        "position": [0.84916, -1.595, 1.4835],
+        "target": "pano_16",
+        "target_url": "https://example.com/pano_3"
+      }
+    ],
+    "info_hotspots": []
+  },
+  {
+    "id": "pano_15",
+    "pos_hotspots": [
+      {
+        "id": "hotspot_1",
+        "type": "position",
+        "position": [-1.0329, -1.595, -1.5665],
+        "target": "pano_14",
+        "target_url": "https://example.com/pano_3"
+      }
+    ],
+    "info_hotspots": []
+  },
+  {
+    "id": "pano_16",
+    "pos_hotspots": [
+      {
+        "id": "hotspot_1",
+        "type": "position",
+        "position": [-2.2181, -1.595, -2.1142],
+        "target": "pano_2",
+        "target_url": "https://example.com/pano_3"
+      },
+      {
+        "id": "hotspot_1",
+        "type": "position",
+        "position": [0.007, -1.595, -3.3102],
+        "target": "pano_6",
+        "target_url": "https://example.com/pano_3"
+      },
+      {
+        "id": "hotspot_1",
+        "type": "position",
+        "position": [2.7924, -1.595, 4.6353],
+        "target": "pano_11",
+        "target_url": "https://example.com/pano_3"
+      },
+      {
+        "id": "hotspot_1",
+        "type": "position",
+        "position": [0.8611, -1.595, 1.3194],
+        "target": "pano_14",
+        "target_url": "https://example.com/pano_3"
+      },
+      {
+        "id": "hotspot_1",
+        "type": "position",
+        "position": [2.9306, -1.595, -1.3046],
+        "target": "pano_17",
+        "target_url": "https://example.com/pano_3"
+      },
+      {
+        "id": "hotspot_1",
+        "type": "position",
+        "position": [-2.3852, -1.595, -3.8824],
+        "target": "pano_18",
+        "target_url": "https://example.com/pano_3"
+      }
+    ],
+    "info_hotspots": []
+  },
+  {
+    "id": "pano_17",
+    "pos_hotspots": [
+      {
+        "id": "hotspot_1",
+        "type": "position",
+        "position": [-0.59903, -1.595, -2.7638],
+        "target": "pano_9",
+        "target_url": "https://example.com/pano_3"
+      },
+      {
+        "id": "hotspot_1",
+        "type": "position",
+        "position": [1.2759, -1.595, 3.0212],
+        "target": "pano_16",
+        "target_url": "https://example.com/pano_3"
+      }
+    ],
+    "info_hotspots": [
+      {
+        "id": "infospot_1",
+        "type": "info",
+        "position": [1.1018, -1.55, -0.65032],
+        "target": "master_bathroom"
+      }
+    ]
+  },
+  {
+    "id": "pano_18",
+    "pos_hotspots": [
+      {
+        "id": "hotspot_1",
+        "type": "position",
+        "position": [0.76474, -1.595, 2.37],
+        "target": "pano_2",
+        "target_url": "https://example.com/pano_3"
+      },
+      {
+        "id": "hotspot_1",
+        "type": "position",
+        "position": [2.755, -1.595, 5.1124],
+        "target": "pano_16",
+        "target_url": "https://example.com/pano_3"
+      },
+      {
+        "id": "hotspot_1",
+        "type": "position",
+        "position": [2.741, -1.595, -1.3155],
+        "target": "pano_19",
+        "target_url": "https://example.com/pano_3"
+      },
+      {
+        "id": "hotspot_1",
+        "type": "position",
+        "position": [0.53278, -1.595, 3.3353],
+        "target": "pano_23",
+        "target_url": "https://example.com/pano_3"
+      }
+    ],
+    "info_hotspots": []
+  },
+  {
+    "id": "pano_19",
+    "pos_hotspots": [
+      {
+        "id": "hotspot_1",
+        "type": "position",
+        "position": [1.8578, -1.595, 1.0997],
+        "target": "pano_20",
+        "target_url": "https://example.com/pano_3"
+      },
+      {
+        "id": "hotspot_1",
+        "type": "position",
+        "position": [-0.094189, -1.595, -3.4451],
+        "target": "pano_21",
+        "target_url": "https://example.com/pano_3"
+      },
+      {
+        "id": "hotspot_1",
+        "type": "position",
+        "position": [-1.59814, -1.595, -2.19103],
+        "target": "pano_18",
+        "target_url": "https://example.com/pano_3"
+      }
+    ],
+    "info_hotspots": [
+      {
+        "id": "infospot_1",
+        "type": "info",
+        "position": [1.1513, -1.55, -0.6462],
+        "target": "bedroom_1"
+      }
+    ]
+  },
+  {
+    "id": "pano_20",
+    "pos_hotspots": [
+      {
+        "id": "hotspot_1",
+        "type": "position",
+        "position": [0.99749, -1.595, -2.116],
+        "target": "pano_19",
+        "target_url": "https://example.com/pano_3"
+      },
+      {
+        "id": "hotspot_1",
+        "type": "position",
+        "position": [4.4138, -1.595, -2.1417],
+        "target": "pano_21",
+        "target_url": "https://example.com/pano_3"
+      }
+    ],
+    "info_hotspots": []
+  },
+  {
+    "id": "pano_21",
+    "pos_hotspots": [
+      {
+        "id": "hotspot_1",
+        "type": "position",
+        "position": [-3.4469, -1.595, -0.078],
+        "target": "pano_19",
+        "target_url": "https://example.com/pano_3"
+      },
+      {
+        "id": "hotspot_1",
+        "type": "position",
+        "position": [1.8628, -1.595, -1.1362],
+        "target": "pano_21",
+        "target_url": "https://example.com/pano_3"
+      }
+    ],
+    "info_hotspots": []
+  },
+  {
+    "id": "pano_22",
+    "pos_hotspots": [
+      {
+        "id": "hotspot_1",
+        "type": "position",
+        "position": [1.9028, -1.595, -1.0178],
+        "target": "pano_21",
+        "target_url": "https://example.com/pano_3"
+      }
+    ],
+    "info_hotspots": []
+  },
+  {
+    "id": "pano_23",
+    "pos_hotspots": [
+      {
+        "id": "hotspot_1",
+        "type": "position",
+        "position": [0.72463, -1.595, 2.075],
+        "target": "pano_2",
+        "target_url": "https://example.com/pano_3"
+      }
+    ],
+    "info_hotspots": []
+  }
+]

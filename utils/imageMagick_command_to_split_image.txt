@@ -1,0 +1,3 @@
+magick high.jpg -crop 256x256 +repage tile_%02d_%02d.jpg
+
+magick low.jpg -crop 36x36 +repage tile_%02d_%02d.jpg

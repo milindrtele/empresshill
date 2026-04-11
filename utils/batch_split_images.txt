@@ -1,0 +1,16 @@
+# Run the universal processor
+for folder in pano_*/; do
+    echo "Checking $folder..."
+    
+    # Process High
+    if [ -f "${folder}high/high.jpg" ]; then
+        echo "  Processing high-res in $folder"
+        magick "${folder}high/high.jpg" -crop 256x256 +repage "${folder}high/tile_%02d_%02d.jpg"
+    fi
+
+    # Process Low
+    if [ -f "${folder}low/low.jpg" ]; then
+        echo "  Processing low-res in $folder"
+        magick "${folder}low/low.jpg" -crop 36x36 +repage "${folder}low/tile_%02d_%02d.jpg"
+    fi
+done

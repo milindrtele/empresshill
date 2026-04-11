@@ -1,0 +1,3 @@
+for f in *.jpg; do
+  /D/Downloads/basisu-master/basisu-master/bin/win/x64/basisu.exe "$f" -ktx2 -mipmap
+done
