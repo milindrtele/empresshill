@@ -74,6 +74,8 @@ export default function StereoTiledPanorama() {
 
     const infoParentRef = useRef(null);
 
+    const infoPanelbuttonsParentRef = useRef(null);
+
     // const MAX_CONCURRENT_TEXTURE_LOADS = 6;
     // let activeTextureLoads = 0;
     // const textureLoadQueue = [];
@@ -349,6 +351,7 @@ export default function StereoTiledPanorama() {
             // console.log(`Created hotspot for target panorama ${hotspot.target} at position`, infospotPlane.position);
 
             infoParentRef.current = new THREE.Object3D();
+            infoPanelbuttonsParentRef.current.add(infoParentRef.current);
             sceneRef.current.add(infoParentRef.current);
             infoParentRef.current.position.set(
                 hotspot.position[0],
@@ -1143,6 +1146,10 @@ export default function StereoTiledPanorama() {
         hotspotParentObjectRef.current.position.set(0, 0.1, 0);
         scene.add(hotspotParentObjectRef.current);
 
+        infoPanelbuttonsParentRef.current = new THREE.Group();
+        infoPanelbuttonsParentRef.current.position.set(0, 0.1, 0);
+        scene.add(infoPanelbuttonsParentRef.current);
+
         /* ================= UI Panel ================= */
         makePanel(vrControlRef.current.controllers[0]);
 
@@ -1367,6 +1374,10 @@ export default function StereoTiledPanorama() {
 
             if (floatingUIAnchorRef.current) {
                 floatingUIAnchorRef.current.position.copy(xrCamera.cameras[0].position);
+            }
+
+            if (infoPanelbuttonsParentRef.current) {
+                infoPanelbuttonsParentRef.current.position.copy(xrCamera.cameras[0].position);
             }
         }
 
